@@ -1,0 +1,26 @@
+# This is needed for local development
+[server]
+# This section configures Streamlit's server settings
+
+
+# no default browser
+headless = true
+# Prevents Streamlit from automatically opening a browser window
+# when you run your app. Useful in development environments
+# and when running in containers
+
+
+#required for local development
+runOnSave = true
+# Automatically reruns the Streamlit app when you save changes
+# to your source code. This is very helpful during development
+# as you don't need to manually restart the server
+
+
+
+#required for local development
+fileWatcherType = "poll"
+# Determines how Streamlit watches for file changes
+# "poll" means Streamlit will periodically check for file changes
+# This is particularly important for Docker containers where
+# the default file watching method might not work properly
