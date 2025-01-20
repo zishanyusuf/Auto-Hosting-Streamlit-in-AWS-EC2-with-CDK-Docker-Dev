@@ -1,3 +1,40 @@
+# My Streamlit App Hosted on EC2 using CDK - In few line of codes
+<img src="./screenshot_streamlit_app.png" height="25%" width="25%" alt="Screenshot of the app">
+
+## Welcome to your Automated EC2 Hosted Streamlit App - using CDK Python tested with Docker Locally!
+This project provides an easy hosting of the streamlit app in EC2. It utilizes the Docker for testing locally and CDK for hosting the codes. If you know the CDK, within few setps one is able to host the streamlit on EC2 using this repository.
+
+## How to Host it in AWS?
+**Step1: Git clone this repository to your local machine**
+```
+git clone https://github.com/zishanyusuf/cdk_ec2_streamlit.git
+```
+
+**Step2: Test the streamlit locally in your Docker**
+You test your app while navigating within the APP `streamlit_app` folder
+```
+cd streamlit_app
+docker build . -t cdk_streamlit_docker_image
+docker run --name cdk_streamlit_container -p 8501:8501 -d -v ${PWD}:/app cdk_streamlit_docker_image
+```
+Test if your streamlit app is working fine accessing your local hosted URL: http://localhost:8501/
+
+**Step3: Launch the EC2 Instance and push the streamlit app code using CDK**
+To deploy the APP with CDK, navigate back to the parent folder `cdk_ec2_streamlit`
+```
+#Navigate to the parent folder cdk_ec2_streamlit
+cd ..
+
+#Snythesize and push the CDK
+cdk synth
+cdk deploy
+```
+
+That's all. You are all set!! The CDK terminal will spit out the URL where you can access your streamlit app hosted on EC2!.
+
+## Acknowledgement
+App taken from [GitHub streamlit_yt by @enricd](https://github.com/enricd/streamlit_yt/tree/main/streamlit_intro)
+
 
 # Welcome to your CDK Python project!
 
