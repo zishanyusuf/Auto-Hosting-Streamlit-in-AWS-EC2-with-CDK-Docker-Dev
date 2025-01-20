@@ -1,7 +1,3 @@
-# Flask==2.3.3
-# Werkzeug==2.3.7
-# gunicorn==21.2.0
-
-
-### ONly dependency required for us is streamlit. We can list other dependencies such as plotly etc.
+st_link_analysis==0.3.0
 streamlit
+typing

@@ -38,6 +38,7 @@ class CdkEc2StreamlitStack(Stack):
         # Allow inbound HTTP traffic on port 8080
         security_group.add_ingress_rule(
             ec2.Peer.any_ipv4(),
+            # ec2.Peer.ipv4("10.36.XX.XXX/32"), #Restrict to a sepcific IP access
             ec2.Port.tcp(8501),
             "Allow Streamlit application access"
         )
@@ -45,6 +46,7 @@ class CdkEc2StreamlitStack(Stack):
         # Allow SSH access (optional, for troubleshooting)
         security_group.add_ingress_rule(
             ec2.Peer.any_ipv4(),
+            # ec2.Peer.ipv4("10.36.XX.XXX/32"), #Restrict to a sepcific IP access
             ec2.Port.tcp(22),
             "Allow SSH access"
         )

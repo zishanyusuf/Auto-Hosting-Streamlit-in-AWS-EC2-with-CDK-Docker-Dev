@@ -17,10 +17,10 @@ COPY ./requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 #Copy the local src folder to the src folder in container
-COPY ./app ./app
+COPY ./ ./
 
 #Specify the command to execute the code inside the container. This will launch the streamlit. It is anlalogous to righting "streamlit run ./src/main.py"
-CMD [ "streamlit", "run", "app/main.py" ]
+CMD [ "streamlit", "run", "./main.py" ]
 
 
 #Build the docker
