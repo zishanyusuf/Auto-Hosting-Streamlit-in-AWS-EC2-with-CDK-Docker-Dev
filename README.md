@@ -1,5 +1,5 @@
 # My Streamlit App Hosted on EC2 using CDK - In few line of codes
-<img src="./screenshot_streamlit_app.png" height="50%" width="50%" alt="Screenshot of the app">
+<img src="./screenshot_streamlit_app.png" height="75%" width="75%" alt="Screenshot of the app">
 
 ## Welcome to your Automated EC2 Hosted Streamlit App - using CDK Python tested with Docker Locally!
 This project provides an easy hosting of the streamlit app in EC2. It utilizes the Docker for testing locally and CDK for hosting the codes. If you know the CDK, within few setps one is able to host the streamlit on EC2 using this repository.
