@@ -33,8 +33,8 @@ cdk deploy
 That's all. You are all set!! The CDK terminal will spit out the URL where you can access your streamlit app hosted on EC2!.
 
 ## Acknowledgement
-App taken from [GitHub streamlit_yt by @enricd](https://github.com/enricd/streamlit_yt/tree/main/streamlit_intro)
-YouTube link on Docker [Local Docker with Streamlit](https://www.youtube.com/watch?v=sl9SXlbZhOc)
+* App taken from [GitHub streamlit_yt by @enricd](https://github.com/enricd/streamlit_yt/tree/main/streamlit_intro)
+* YouTube link on Docker [Local Docker with Streamlit](https://www.youtube.com/watch?v=sl9SXlbZhOc)
 
 
 # Welcome to your CDK Python project!
